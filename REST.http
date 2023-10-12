@@ -1,0 +1,67 @@
+//PRODUCTOS
+###
+GET  http://localhost:8080/api/products/1
+###
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+       
+    "title":"producto 12",
+    "description":"description 12",
+    "price":"100",
+    "img":"ruta img",
+    "code":"129",
+    "stock" :"50",
+    "img": "img"
+    
+}
+###
+PUT http://localhost:8080/api/products/8
+Content-Type: application/json
+
+{
+       
+    "title":"producto 1",
+    "description":"description 1",
+    "price":"100",
+    "img":"ruta img",
+    "code":"04",
+    "stock" :"10"
+    
+}
+
+###
+DELETE http://localhost:8080/api/products/2
+
+//CARTS
+
+###
+POST http://localhost:8080/api/carts
+Content-Type: application/json
+
+{
+  "description": "cart 2",
+  "quantity": 60,
+  "total": 1000
+}
+// PRODUCTOS
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+       
+    "title":"producto 2",
+    "description":"descripcion 2",
+    "price":180,
+    "code":"05",
+    "stock" :20
+    
+}
+
+###
+ GET http://localhost:8080/api/products/651eaf58d5d57de4db098b58

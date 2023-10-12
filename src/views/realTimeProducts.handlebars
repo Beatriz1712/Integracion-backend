@@ -1,0 +1,31 @@
+<!---Esto aparece en en el end point realTimeProduct--->
+<h2>Agregar Producto</h2>
+<form id="formulario" method="post" action="/api/products">
+    <div >
+        <label for="title">Nombre</label>
+        <input type="text"  id="title" placeholder="Ingrese nombre producto">
+    </div>
+    <div >
+        <label for="description">Descripcion</label>
+        <input type="text"  id="description" placeholder="Ingrese descripcion producto">
+    </div>
+    <div >
+        <label for="price">Precio</label>
+        <input type="number"  id="price" placeholder="Ingrese Precio producto">
+    </div>
+    <div>
+        <label for="code">Codigo </label>
+        <input type="text"  id="code" placeholder="Ingrese codigo producto">
+    </div>
+    <div>
+        <label for="stock">Stock</label>
+        <input type="number"  id="stock" placeholder="Ingrese Stock producto">
+    </div>
+    
+    <button type="submit" >Enviar</button>
+</form>
+<div id="products-container" ></div>
+
+<!--se enlace con la conexion socket y con el index.js--->
+<script src='/socket.io/socket.io.js'></script>
+<script src="/js/index.js"></script>

@@ -1,0 +1,117 @@
+//***********INTEGRACION WS MONGOOSE*****************
+//****************CARTS******************************
+###
+GET http://localhost:8080/api/carts 
+###
+GET http://localhost:8080/651e28a062df8bb8e11424e4
+
+###
+POST http://localhost:8080/api/carts
+Content-Type: application/json
+
+{
+  "description": "cart 4",
+  "quantity": 60,
+  "total": 1000
+}
+
+###
+PUT http://localhost:8080/api/carts/651e28a062df8bb8e11424e4
+Content-Type: application/json
+
+{
+  "description": "nuevo cart 4",
+  "quantity": 60,
+  "total": 1000
+}
+
+###
+DELETE http://localhost:8080/api/carts/651e28a062df8bb8e11424e4
+
+
+//*********** PRODUCTOS******************
+
+###
+GET http://localhost:8080/api/products 
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+       
+    "title":"producto 5",
+    "description":"descripcion 5",
+    "price":500,
+    "code":"088",
+    "stock" :800
+    
+}
+
+###
+PUT http://localhost:8080/api/products/651eb3fbbe4faeb5fdff3b99
+Content-Type: application/json
+
+{
+       
+    "title":"producto 3",
+    "description":"cambio descripcion 3",
+    "price":380,
+    "code":"063",
+    "stock" :200
+    
+}
+
+###
+DELETE http://localhost:8080/api/products/651eaf58d5d57de4db098b58 
+
+//********************MENSAJES********************************
+
+###
+GET http://localhost:8080/api/messages
+
+
+###
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{
+
+     "user": "Cristian",
+     "message": "LLegó bien"
+
+}
+
+###
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{
+
+     "user": "Raisa",
+     "message": "Productos recibidos"
+
+}
+
+###
+PUT http://localhost:8080/api/messages/651ebabbf26fb8d083357f58
+Content-Type: application/json
+
+{
+
+     "user": "Raisa 😀",
+     "message": "Productos recibidos"
+
+}
+
+###
+PUT http://localhost:8080/api/messages/651ebabbf26fb8d083357f58
+
+
+//****************UPLOAD*****************
+###
+GET http://localhost:8080/upload
+
+####
+POST http://localhost:8080/api/upload/upload
+Content-Content-Type: 

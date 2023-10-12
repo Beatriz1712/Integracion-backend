@@ -1,0 +1,30 @@
+{{#if productos.length }}
+<div>
+    {{#each productos}}
+    <div>
+        <img src="" alt="img">
+        <div>
+            <h5 >{{title}}</h5>
+            <p>Id producto: {{id}}</p>
+            <p>Descripcion: {{description}}</p>
+            <p>Precio: ${{price}}</p>
+            {{#each img}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+            <p>Codigo: {{code}}</p>
+            <p>Stock: {{stock}}</p>
+            <p>Activo: {{status}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+
+<h2>Sin productos.</h2>
+{{/if}}
+<!---socket--->
+<script src="/socket.io/socket.io.js"></script>
+<!---de public--->
+<script src="/js/index.js"></script>
